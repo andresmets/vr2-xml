@@ -40,7 +40,7 @@ xmlns="http://www.my.vr.com"
     </publisher>
     <publisher id="2" name="Ehituspood">
         <platforms count="2" totalreviews="4" averagerating="5">
-            <platform id="2" url="http://kodu-kauniks.ee" totalreviews="2" averagerating="5">
+            <platform id="3" url="http://kodu-kauniks.ee" totalreviews="2" averagerating="5">
                 <reviews>
                     <review id="4" date="12.09.2016" rating="5">
                         <author ssoId="4" username="jüri" email="juri@gmail.com"/>
@@ -53,7 +53,7 @@ xmlns="http://www.my.vr.com"
                 </reviews>
             </platform>
 
-            <platform id="3" url="http://kyproki-abi.ee" totalreviews="2" averagerating="5">
+            <platform id="4" url="http://kyproki-abi.ee" totalreviews="2" averagerating="5">
                 <reviews>
                     <review id="1" date="12.06.2016" rating="3">
                         <author ssoId="12" username="admin" email="some@some"/>
