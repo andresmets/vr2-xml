@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<root xmlns="http://www.my.vr.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.my.vr.com publisher.xsd">
+
+	<publisher id="1" name="some company">
+		<platforms count="2" totalreviews="5" averagerating="3.5">
+		<platform id="21" url="http://someblog" totalreviews="4" averagerating="5">
+<reviews>
+			<review id="1" date="12.06.2016" rating="3">
+				<author ssoId="12" username="admin" email="some@some"/>
+<text>tere</text>			
+</review>	
+		</reviews>
+		</platform>
+		</platforms>
+	</publisher>
+	<publisher id="2" name="some company">
+		<platforms count="22" totalreviews="5" averagerating="3.5">
+		<platform id="2" url="http://someblog" totalreviews="4" averagerating="5">
+<reviews>
+			<review id="1" date="12.06.2016" rating="3">
+				<author ssoId="12" username="dmin" email="some@some"/>
+<text>tere</text>			
+</review>
+<review id="2" date="12.06.2016" rating="3">
+				<author ssoId="12" username="admin" email="some@some"/>
+<text>tere</text>			
+</review>
+		</reviews>
+		</platform>
+		
+<platform id="3" url="http://someblog" totalreviews="4" averagerating="5">
+<reviews>
+			<review id="1" date="12.06.2016" rating="3">
+				<author ssoId="12" username="admin" email="some@some"/>
+<text>tere</text>			
+</review>
+<review id="1" date="12.06.2016" rating="3">
+				<author ssoId="1" username="admin" email="some@some"/>
+<text>tere</text>			
+</review>
+		</reviews>
+		</platform>
+		</platforms>
+	</publisher>
+</root>

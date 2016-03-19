@@ -1,0 +1,64 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="http://www.my.vr.com"
+xmlns="http://www.my.vr.com">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="publisher" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="platforms">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="platform" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="reviews">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="review" maxOccurs="unbounded" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="author">
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute type="xs:byte" name="ssoId" use="optional"/>
+                                              <xs:attribute type="xs:string" name="username" use="optional"/>
+                                              <xs:attribute type="xs:string" name="email" use="optional"/>
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element type="xs:string" name="text"/>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:byte" name="id" use="optional"/>
+                                    <xs:attribute type="xs:string" name="date" use="optional"/>
+                                    <xs:attribute type="xs:byte" name="rating" use="optional"/>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="id" use="optional"/>
+                        <xs:attribute type="xs:anyURI" name="url" use="optional"/>
+                        <xs:attribute type="xs:byte" name="totalreviews" use="optional"/>
+                        <xs:attribute type="xs:byte" name="averagerating" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:byte" name="count" use="optional"/>
+                  <xs:attribute type="xs:byte" name="totalreviews" use="optional"/>
+                  <xs:attribute type="xs:float" name="averagerating" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="id" use="optional"/>
+            <xs:attribute type="xs:string" name="name" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
