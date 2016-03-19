@@ -1,47 +1,70 @@
 <?xml version="1.0"?>
-<root xmlns="http://www.my.vr.com"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.my.vr.com publisher.xsd">
+<!--
+kui soovitakse xml-ist viidet xsd'le
+xmlns="http://www.my.vr.com"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.my.vr.com publisher.xsd"
+-->
+<root>
+    <publisher id="1" name="Trend OÜ">
+        <platforms count="2" totalreviews="5" averagerating="5">
+            <platform id="1" url="http://moeblog.ee" totalreviews="4" averagerating="5">
+                <reviews>
+                    <review id="1" date="12.06.2016" rating="5">
+                        <author ssoId="1" username="reelika" email="reelika@gmail.com"/>
+                        <text>lahe</text>
+                    </review>
+                    <review id="2" date="12.07.2016" rating="5">
+                        <author ssoId="2" username="angela" email="angela@gmail.com"/>
+                        <text>tore</text>
+                    </review>
+                    <review id="3" date="12.08.2016" rating="5">
+                        <author ssoId="3" username="tom" email="tom@gmail.com"/>
+                        <text>proovin</text>
+                    </review>
+                    <review id="4" date="12.09.2016" rating="5">
+                        <author ssoId="4" username="jüri" email="juri@gmail.com"/>
+                        <text>mina ka</text>
+                    </review>
+                </reviews>
+            </platform>
+            <platform id="2" url="http://sisustusblog.ee" totalreviews="1" averagerating="5">
+                <reviews>
+                    <review id="1" date="12.06.2016" rating="5">
+                        <author ssoId="1" username="reelika" email="reelika@gmail.com"/>
+                        <text>tapeet sobib mu huulepulgaga- yess- lahe disain</text>
+                    </review>
+                </reviews>
+            </platform>
+        </platforms>
+    </publisher>
+    <publisher id="2" name="Ehituspood">
+        <platforms count="2" totalreviews="4" averagerating="5">
+            <platform id="2" url="http://kodu-kauniks.ee" totalreviews="2" averagerating="5">
+                <reviews>
+                    <review id="4" date="12.09.2016" rating="5">
+                        <author ssoId="4" username="jüri" email="juri@gmail.com"/>
+                        <text>hea valik</text>
+                    </review>
+                    <review id="2" date="12.07.2016" rating="5">
+                        <author ssoId="2" username="angela" email="angela@gmail.com"/>
+                        <text>ilusad põrandad</text>
+                    </review>
+                </reviews>
+            </platform>
 
-	<publisher id="1" name="some company">
-		<platforms count="2" totalreviews="5" averagerating="3.5">
-		<platform id="21" url="http://someblog" totalreviews="4" averagerating="5">
-<reviews>
-			<review id="1" date="12.06.2016" rating="3">
-				<author ssoId="12" username="admin" email="some@some"/>
-<text>tere</text>			
-</review>	
-		</reviews>
-		</platform>
-		</platforms>
-	</publisher>
-	<publisher id="2" name="some company">
-		<platforms count="22" totalreviews="5" averagerating="3.5">
-		<platform id="2" url="http://someblog" totalreviews="4" averagerating="5">
-<reviews>
-			<review id="1" date="12.06.2016" rating="3">
-				<author ssoId="12" username="dmin" email="some@some"/>
-<text>tere</text>			
-</review>
-<review id="2" date="12.06.2016" rating="3">
-				<author ssoId="12" username="admin" email="some@some"/>
-<text>tere</text>			
-</review>
-		</reviews>
-		</platform>
-		
-<platform id="3" url="http://someblog" totalreviews="4" averagerating="5">
-<reviews>
-			<review id="1" date="12.06.2016" rating="3">
-				<author ssoId="12" username="admin" email="some@some"/>
-<text>tere</text>			
-</review>
-<review id="1" date="12.06.2016" rating="3">
-				<author ssoId="1" username="admin" email="some@some"/>
-<text>tere</text>			
-</review>
-		</reviews>
-		</platform>
-		</platforms>
-	</publisher>
+            <platform id="3" url="http://kyproki-abi.ee" totalreviews="2" averagerating="5">
+                <reviews>
+                    <review id="1" date="12.06.2016" rating="3">
+                        <author ssoId="12" username="admin" email="some@some"/>
+                        <text>head raamid</text>
+                    </review>
+                    <review id="2" date="12.07.2016" rating="5">
+                        <author ssoId="2" username="angela" email="angela@gmail.com"/>
+                        <text>õpetlik tekst</text>
+                    </review>
+                </reviews>
+            </platform>
+        </platforms>
+    </publisher>
 </root>
