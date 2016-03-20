@@ -8,6 +8,7 @@
                 <h2>Kommentaaride publitseerijad ning kommentaarid</h2>
                 <div>
                     <xsl:for-each select="root/publisher">
+                        <p></p>
                         <div>
                             <div>
                                 <xsl:value-of select="@name"/>
@@ -19,6 +20,7 @@
                                     <div>Kommentaarid
                                         <xsl:for-each select="reviews/review">
                                             <div>
+                                                <p></p>
                                                 <div><span>autor: <xsl:value-of select="author/@username"/></span><span>email: <xsl:value-of select="author/@email"/></span></div>
                                                 <div>kommentaari lisamise kuupäev: <xsl:value-of select="@date"/></div>
                                                 <div>
